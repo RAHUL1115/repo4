@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "@rahul1115/repo1": "^1.0.7"
-  }
+  },
+  "name": "@rahul1115/repo4",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm cache clean -force && npm install && npm update && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAHUL1115/repo4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAHUL1115/repo4/issues"
+  },
+  "homepage": "https://github.com/RAHUL1115/repo4#readme"
 }
