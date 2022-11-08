@@ -3,7 +3,6 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "preinstall": "npm cache clean -force && npm update",
     "postinstall": "node ./postinstall.js"
@@ -20,5 +19,13 @@
   "homepage": "https://github.com/RAHUL1115/repo4#readme",
   "dependencies": {
     "@rahul1115/repo1": "*"
+  },
+  "nexsales": {
+    "dev": {
+      "@rahul1115/repo2": "*"
+    },
+    "prod": {
+      "@rahul1115/repo2": "1.0.3"
+    }
   }
 }
