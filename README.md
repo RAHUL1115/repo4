@@ -3,7 +3,7 @@
 # Docker build for development
 ```docker build -t <tag_name> --build-args BUILD_ARG='dev'```
 
-# Docker build for development
+# Docker build for production (default)
 ```docker build -t <tag_name>```
 or
 ```docker build -t <tag_name> --build-args BUILD_ARG='prod'```
