@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm cache clean -force && npm update"
+    "preinstall": "npm cache clean -force && npm update",
+    "postinstall": "node ./postinstall.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,12 @@
   },
   "nexsales": {
     "dev": {
-      "@rahul1115/repo2": "*"
+      "@rahul1115/repo2": "*",
+      "@rahul1115/repo3": "*"
     },
     "prod": {
-      "@rahul1115/repo2": "1.0.3"
+      "@rahul1115/repo2": "1.1.2",
+      "@rahul1115/repo3": "1.0.8"
     }
   }
 }
