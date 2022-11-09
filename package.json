@@ -4,8 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm cache clean -force && npm update",
-    "postinstall": "node ./postinstall.js"
+    "preinstall": "npm cache clean -force && npm update"
   },
   "repository": {
     "type": "git",
