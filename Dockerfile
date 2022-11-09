@@ -1,7 +1,9 @@
 FROM node:18
-RUN mkdir -p /home/rahul/dev/app/nodeone/node_modules
-WORKDIR /home/rahul/dev/app/docker/
-COPY ./. ./.
+ARG BUILD_ARG=prod
+WORKDIR /home/app/repo4
+ENV BUILD=$BUILD_ARG
+COPY package*.json ./
+COPY postinstall.js ./
 RUN npm install
-RUN DEV=true node ./postinstall.js
+COPY . .
 CMD [ "node", "index.js" ]

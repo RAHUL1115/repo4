@@ -4,7 +4,6 @@ const exec = util.promisify(require('child_process').exec);
 const tracker = require('@rahul1115/repo1')
 const packageJSON = require('./package.json')
 
-
 async function main() { 
     let isProd = true;
     let prod = packageJSON?.nexsales?.prod
@@ -12,14 +11,14 @@ async function main() {
     let dev = packageJSON?.nexsales?.dev
     let devLength = Object.keys(dev).length;
 
-    // ? change isProd according to arguments
-    if (process.env.DEV) {
-        isProd = false;
-    }
-
     // * necessary variables
     let packages = ``;
     let packageObject;
+
+    // ? change isProd according to arguments
+    if (process.env.BUILD == 'dev') {
+        isProd = false;
+    }
 
     // ? use the object according to environment
     if(isProd && prod && prodLength > 0){

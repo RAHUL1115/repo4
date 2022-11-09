@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/RAHUL1115/repo4#readme",
   "dependencies": {
-    "@rahul1115/repo1": "*"
+    "@rahul1115/repo1": "*",
+    "@rahul1115/repo2": "^1.1.3"
   },
   "nexsales": {
     "dev": {
